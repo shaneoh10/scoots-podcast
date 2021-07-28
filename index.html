@@ -42,18 +42,51 @@
             <div class="container-fluid h-100">
                 <div class="row h-75">
                     <div class="col-10 mx-auto text-center my-auto">
-                        <h1 class="text-center">Scoot's Podcast</h1>
-                        <a href="#listen" class="btn btn-lg btn-secondary mt-4">Listen Now!</a>
+                        <h1 class="text-center title">Scoot's Podcast</h1>
+                        <a href="#listen" class="btn btn-lg btn-primary mx-1 mt-4">Listen Now!</a>
+                        <a href="#about" class="btn btn-lg btn-secondary mx-1 mt-4">About</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="spotify" id="listen">
-        <div class="spotify-container col-12 col-md-6 mx-auto my-auto">
-            <iframe src="https://open.spotify.com/embed/show/2imJejytfiGPjMy0pkbiq9?theme=0" height="232"
-                width="80%" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <section id="listen">
+        <div class="container">
+            <h2 class="text-center mt-4 mb-5">About</h2>
+            <div class="row">
+                <div class="spotify-container col-12 col-md-6 mx-auto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt alias, rerum minima
+                        nisi facilis deserunt explicabo molestias, excepturi earum non? Vero perspiciatis blanditiis ex
+                        aut error ipsam, nulla laborum!</p>
+                </div>
+                <div class="spotify-container col-12 col-md-6 mx-auto">
+                    <iframe src="https://open.spotify.com/embed/show/2imJejytfiGPjMy0pkbiq9?theme=0" height="232"
+                        width="80%" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-center mt-4 mb-5">Contact</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 mx-auto">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name">
+                            <div id="emailHelp" class="form-text">Leave this blank if you wish to remain anonymous.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" placeholder="Leave a message..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 

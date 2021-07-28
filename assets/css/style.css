@@ -16,8 +16,16 @@ body {
     background-size: cover;
 }
 
+#contact {
+    background-color: #424242;
+}
+
 .opaque-cover {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 4rem;
 }
