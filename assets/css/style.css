@@ -4,7 +4,7 @@ body {
     margin: 0;
     width: 100%;
     overflow-x: hidden;
-    font-size: 16px;
+    font-size: 18px;
     color: #fafafa;
     background-color: #424242;
     scroll-behavior: smooth;
@@ -21,7 +21,8 @@ nav {
     background-color: #242424 !important;
 }
 
-#about {
+#about,
+footer {
     background-color: #242424;
 }
 
