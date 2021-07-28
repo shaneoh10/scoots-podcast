@@ -5,6 +5,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Imported Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -19,7 +24,7 @@
 
     <header id="header">
         <div class="opaque-cover">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark sticky" id="navbar">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Scoot's Podcast</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -45,9 +50,10 @@
                 </div>
             </nav>
             <div class="container-fluid h-100">
-                <div class="row h-75">
+                <div class="row h-100">
                     <div class="col-10 mx-auto text-center my-auto">
-                        <h1 class="text-center title">Scoot's Podcast</h1>
+                        <h1 class="text-center" id="title">Scoot's Podcast</h1>
+                        <p>Speaking for the people of Whitegate.</p>
                         <a href="#listen" class="btn btn-lg btn-primary mx-1 mt-4">Listen Now!</a>
                         <a href="#about" class="btn btn-lg btn-secondary mx-1 mt-4">About</a>
                     </div>
@@ -58,7 +64,8 @@
 
     <section id="listen">
         <div class="container">
-            <h2 class="text-center mt-4 mb-5">Listen</h2>
+            <h2 class="text-center mt-4 mb-3">Listen</h2>
+            <hr class="w-25 mx-auto mb-5">
             <div class="row">
                 <div class="col-12 mx-auto">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -123,12 +130,14 @@
 
     <section id="about">
         <div class="container">
-            <h2 class="text-center mt-4 mb-5">About</h2>
+            <h2 class="text-center pt-4 mt-4 mb-3">About</h2>
+            <hr class="w-25 mx-auto mb-5">
             <div class="row">
                 <div class="col-12 col-md-4 mx-auto">
-                    <img src="https://support.hubstaff.com/wp-content/uploads/2019/08/good-pic.png" height="200" class="img-rounded">
+                    <img src="https://support.hubstaff.com/wp-content/uploads/2019/08/good-pic.png" height="200"
+                        class="img-rounded">
                 </div>
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-8 mb-5">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis minima modi aspernatur
                         voluptatum ipsa beatae eligendi itaque, nostrum culpa maiores quidem excepturi quod qui est sunt
                         corrupti quos provident placeat?</p>
@@ -142,9 +151,14 @@
 
     <section id="contact">
         <div class="container">
-            <h2 class="text-center mt-4 mb-5">Contact</h2>
+            <h2 class="text-center mt-4 mb-3">Contact</h2>
+            <hr class="w-25 mx-auto mb-5">
             <div class="row">
                 <div class="col-12 col-md-6 mx-auto">
+                    <h5 class="text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+                        dolores sequi quidem, ipsam
+                        odio aliquam ratione, et dignissimos cupiditate quod ipsa inventore consequatur? Officia libero
+                        id a enim reiciendis voluptates.</h5>
                     <form>
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
@@ -157,7 +171,9 @@
                             <textarea class="form-control" id="message" placeholder="Leave a message..." rows="5"
                                 required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send</button>
+                        <div class="text-center mt-5 mb-5">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -166,17 +182,16 @@
 
     <footer id="footer">
         <div class="container-fluid footer-container text-center">
-            <ul class="footer--icons list-inline">
+            <ul class="footer--icons list-inline pt-4">
                 <li class="list-inline-item"><a href="https://facebook.com/" target="_blank"><i
                             class="fab fa-facebook"></i></a></li>
                 <li class="list-inline-item"><a href="https://instagram.com/" target="_blank"><i
                             class="fab fa-instagram"></i></a></li>
-                <li class="list-inline-item"><a href="https://linkedin.com/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a></li>
-                <li class="list-inline-item"><a href="https://twitter.com/" target="_blank"><i
-                            class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="https://spotify.com/" target="_blank"><i
+                            class="fab fa-spotify"></i></a></li>
             </ul>
-            <p>Copyright &copy; 2020 Coffee Box Ltd.</p>
+            <p class="pb-4 mb-0">Copyright &copy; 2021 Scoot's Podcast.</p>
+            <p class="text-muted pb-4 mb-0">Developed by Shane O'Hanlon</p>
         </div>
     </footer>
 
@@ -184,6 +199,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <!-- JQuery CDN  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Local JS -->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

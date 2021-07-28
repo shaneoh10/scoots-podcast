@@ -5,6 +5,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-size: 18px;
+    font-family: 'Archivo Narrow', sans-serif;
     color: #fafafa;
     background-color: #424242;
     scroll-behavior: smooth;
@@ -17,14 +18,23 @@ body {
     background-size: cover;
 }
 
-nav {
-    background-color: #242424 !important;
-}
-
 #about,
 footer {
     background-color: #242424;
 }
+
+h2 {
+    font-style: italic;
+}
+/*********************************************** HEADER */
+#navbar {
+    background-color: #242424e8;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    transition: top 0.3s;
+    z-index: 99999; 
+  }
 
 .opaque-cover {
     height: 100%;
@@ -32,6 +42,36 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.title {
+#title {
     font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+/*********************************************** FOOTER */
+
+
+.footer--icons {
+    font-size: 2rem;
+}
+
+.footer--icons li {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: #424242 !important;
+}
+
+.footer--icons a {
+    color: #616060;
+    transition: 0.3s;
+}
+
+.footer--icons a:hover,
+.footer--icons a:active {
+    color: #f8f8f8;
 }
