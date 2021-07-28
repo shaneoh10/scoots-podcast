@@ -14,8 +14,48 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
 
+    <header id="header">
+        <div class="opaque-cover">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Scoot's Podcast</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 me-auto mb-lg-0">
+                        </ul>
+                        <ul class="navbar-nav mb-2 ml-auto mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#listen">Link</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid h-100">
+                <div class="row h-75">
+                    <div class="col-10 mx-auto text-center my-auto">
+                        <h1 class="text-center">Scoot's Podcast</h1>
+                        <a href="#listen" class="btn btn-lg btn-secondary mt-4">Listen Now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="spotify" id="listen">
+        <div class="spotify-container col-12 col-md-6 mx-auto my-auto">
+            <iframe src="https://open.spotify.com/embed/show/2imJejytfiGPjMy0pkbiq9?theme=0" height="232"
+                width="80%" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+    </section>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
