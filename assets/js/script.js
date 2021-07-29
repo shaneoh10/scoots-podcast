@@ -22,7 +22,8 @@ window.onscroll = function () {
 
 // Scroll Reveal 
 
-ScrollReveal().reveal('.reveal-about', { distance: '100px', duration: 2000, origin: 'right'});
+ScrollReveal().reveal('.reveal-about', { distance: '200px', duration: 2000, origin: 'right'});
+ScrollReveal().reveal('.reveal-image', { distance: '200px', duration: 2000, origin: 'left'});
 ScrollReveal().reveal('.reveal-listen', { distance: '100px', duration: 2000});
 ScrollReveal().reveal('.reveal-contact', { distance: '100px', duration: 2000, origin: 'left'});
 
