@@ -21,6 +21,13 @@
     <!-- Local CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Scoot's Podcast</title>
+    <!-- Email JS CDN  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_WSBDPxxnXrLtz8Pnt3thT");
+        })();
+    </script>
 </head>
 
 <body>
@@ -40,7 +47,10 @@
                         </ul>
                         <ul class="navbar-nav mb-2 ml-auto mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="#header">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#listen">Listen</a>
@@ -70,7 +80,7 @@
             <h2 class="text-center pt-4 mb-3">About</h2>
             <hr class="w-25 mx-auto mb-5">
             <div class="row reveal-about">
-                <div class="col-12 col-md-4 mx-auto">
+                <div class="col-12 col-md-4 mx-auto text-center">
                     <img src="https://images.unsplash.com/photo-1622616762095-83934ffd635c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80" height="300"
                         class="rounded-circle">
                 </div>
@@ -180,15 +190,20 @@
                     <p class="text-center mb-5 main-text">Feel free to drop me a message with any feedback or
                         suggestions about the show. I'm always looking for new guests so don't be shy and let me know if
                         you want to come and talk a bit of shite with me.</p>
-                    <form>
+                    <form id="form" onsubmit="return sendMail(this);">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name">
+                            <input type="text" class="form-control" id="name" name="from_name" required>
                             <div class="form-text">Leave this blank if you wish to remain anonymous.</div>
                         </div>
                         <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="from_email" required>
+                            <div class="form-text">Your email will not be shared with anyone. Leave this blank if you wish.</div>
+                        </div>
+                        <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" placeholder="Leave a message..." rows="5"
+                            <textarea class="form-control" id="message" name="from_message" placeholder="Leave a message..." rows="5"
                                 required></textarea>
                         </div>
                         <div class="text-center mt-5 mb-5">
