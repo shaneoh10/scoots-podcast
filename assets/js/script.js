@@ -1,5 +1,4 @@
 // Navbar collapse on menu item click
-// https://mdbootstrap.com/support/general/auto-close-navbar-when-click-on-link-responsive-mode/
 
 $('.nav-link').click(function () {
     $('.navbar-collapse').collapse('hide');
@@ -7,7 +6,6 @@ $('.nav-link').click(function () {
 
 
 // Navbar appear on scroll up
-// https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
@@ -24,7 +22,7 @@ window.onscroll = function () {
 
 ScrollReveal().reveal('.reveal-about', { distance: '200px', duration: 2000, origin: 'right'});
 ScrollReveal().reveal('.reveal-image', { distance: '200px', duration: 2000, origin: 'left'});
-ScrollReveal().reveal('.reveal-listen', { distance: '100px', duration: 2000});
+ScrollReveal().reveal('.reveal-podcast', { distance: '100px', duration: 2000});
 ScrollReveal().reveal('.reveal-contact', { distance: '100px', duration: 2000, origin: 'left'});
 
 // EMAIL JS CODE

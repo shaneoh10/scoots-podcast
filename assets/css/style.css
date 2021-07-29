@@ -17,12 +17,17 @@ body {
     background-size: cover;
 }
 
-#listen {
+#podcast {
     background: url(https://images.unsplash.com/photo-1573152958734-1922c188fba3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1490&q=80) no-repeat center fixed;
     background-size: cover;
 }
 
+#about {
+    background-image: linear-gradient(#3a3a3a, #2c2c2c);
+}
+
 #contact {
+    background-image: linear-gradient(#3a3a3a, #424242);
     min-height: 100vh;
 }
 
@@ -36,7 +41,7 @@ h2 {
 }
 
 .main-text {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 /*********************************************** BUTTONS */
@@ -68,7 +73,7 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.opaque-cover-listen {
+.opaque-cover-podcast {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -90,7 +95,7 @@ h2 {
     font-size: 2rem;
 }
 
-/*********************************************** LISTEN */
+/*********************************************** PODCAST */
 
 
 .main--icons {
@@ -144,3 +149,24 @@ form {
 .footer--icons a:active {
     color: #f8f8f8;
 }
+
+.footer-text {
+    color: #858585;
+}
+
+/*********************************************** FOOTER */
+
+@media screen and (min-width: 768px) {
+    .main--icons i,
+    .footer--icons i  {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+    .footer--icons {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .main-text {
+        font-size: 1.8rem;
+    }
+  }

@@ -24,7 +24,7 @@
     <!-- Email JS CDN  -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
+        (function () {
             emailjs.init("user_WSBDPxxnXrLtz8Pnt3thT");
         })();
     </script>
@@ -53,7 +53,7 @@
                                 <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#listen">Listen</a>
+                                <a class="nav-link" href="#podcast">Podcast</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact">Contact</a>
@@ -67,7 +67,7 @@
                     <div class="col-10 mx-auto text-center my-auto">
                         <h1 class="text-center" id="title">Scoot's Podcast</h1>
                         <p class="sub-title">Speaking for the people of Whitegate.</p>
-                        <a href="#listen" class="btn btn-lg btn-primary mx-1 mt-4">Listen Now!</a>
+                        <a href="#podcast" class="btn btn-lg btn-primary mx-1 mt-4">Listen Now!</a>
                         <a href="#about" class="btn btn-lg btn-secondary mx-1 mt-4">About</a>
                     </div>
                 </div>
@@ -77,36 +77,38 @@
 
     <section id="about">
         <div class="container">
-            <h2 class="text-center pt-4 mb-3">About</h2>
+            <h2 class="text-center pt-4 mb-3">About Me</h2>
             <hr class="w-25 mx-auto mb-5">
             <div class="row reveal-image">
                 <div class="col-12 mx-auto text-center">
-                    <img src="https://images.unsplash.com/photo-1622616762095-83934ffd635c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80" height="300"
-                        class="rounded-circle">
+                    <img src="assets/images/scoot_profile.jpg" height="300" class="rounded-circle">
                 </div>
                 <div class="col-12 mb-5 text-center mt-5 reveal-about">
-                    <p class="main-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis minima modi
-                        aspernatur
-                        voluptatum ipsa beatae eligendi itaque, nostrum culpa maiores quidem excepturi quod qui est sunt
-                        corrupti quos provident placeat?</p>
-                    <p class="main-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis minima modi
-                        aspernatur
-                        voluptatum ipsa beatae eligendi itaque, nostrum culpa maiores quidem excepturi quod qui est sunt
-                        corrupti quos provident placeat?</p>
+                    <p class="main-text">Hello folks, my name is Scott but around where I'm from I'm known as Scoot. I
+                        live in a small village with a big reputation in East Cork called Whitegate. I'm the king of
+                        shite talk around here and many people have tried to take the crown off me, but all have
+                        failed... miserably.
+                    </p>
+                    <p class="main-text">I decided to start a podcast with the aim of getting people to share some funny
+                        stories about nights out or situations they've been in over the years, and hopefully have a bit
+                        of craic while doing so. I hope everyone gets a good laugh off my podcast and that it might
+                        refresh some memories of good nights out.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="listen">
-        <div class="opaque-cover-listen">
+    <section id="podcast">
+        <div class="opaque-cover-podcast">
             <div class="container">
-                <h2 class="text-center pt-4 pb-3">Listen</h2>
+                <h2 class="text-center pt-4 pb-3">Podcast</h2>
                 <hr class="w-25 mx-auto mb-4">
-                <p class="text-center p-4 mb-5 main-text reveal-listen">Follow my show on Spotify so you can keep up to date with the
-                    latest gossip from the village of
-                    Whitegate, the real capital. New podcasts are uploaded every two weeks.</p>
-                <div class="row reveal-listen">
+                <p class="text-center p-4 mb-5 main-text reveal-podcast">
+                    Follow my podcast on Spotify and can keep up to date with the latest gossip from the village of
+                    Whitegate. New podcasts are uploaded every two weeks.
+                </p>
+                <div class="row reveal-podcast">
                     <div class="col-12 mx-auto">
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
@@ -169,11 +171,11 @@
                     </div>
                     <div class="col-12 mx-auto text-center">
                         <ul class="main--icons list-inline pt-4">
-                            <li class="list-inline-item facebook-icon p-2"><a href="https://facebook.com/"
+                            <li class="list-inline-item facebook-icon p-2 py-4 mb-5"><a href="https://facebook.com/"
                                     target="_blank"><i class="fab fa-facebook"></i></a></li>
-                            <li class="list-inline-item instagram-icon p-2"><a href="https://instagram.com/"
+                            <li class="list-inline-item instagram-icon p-2 py-4 mb-5"><a href="https://instagram.com/"
                                     target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item spotify-icon p-2"><a href="https://spotify.com/"
+                            <li class="list-inline-item spotify-icon p-2 py-4 mb-5"><a href="https://spotify.com/"
                                     target="_blank"><i class="fab fa-spotify"></i></a></li>
                         </ul>
                     </div>
@@ -190,7 +192,7 @@
                     <p class="text-center mb-5 main-text">Feel free to drop me a message with any feedback or
                         suggestions about the show. I'm always looking for new guests so don't be shy and let me know if
                         you want to come and talk a bit of shite with me.</p>
-                    <form id="form" onsubmit="return sendMail(this);">
+                    <form id="form" onsubmit="return sendMail(this);" class="px-3">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
                             <input type="text" class="form-control" id="name" name="from_name" required>
@@ -199,12 +201,13 @@
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" name="from_email" required>
-                            <div class="form-text">Your email will not be shared with anyone. Leave this blank if you wish.</div>
+                            <div class="form-text">Your email will not be shared with anyone. Leave this blank if you
+                                wish.</div>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" name="from_message" placeholder="Leave a message..." rows="5"
-                                required></textarea>
+                            <textarea class="form-control" id="message" name="from_message"
+                                placeholder="Leave a message..." rows="5" required></textarea>
                         </div>
                         <div class="text-center mt-5 mb-5">
                             <button type="submit" class="btn btn-primary">Send</button>
@@ -225,8 +228,8 @@
                 <li class="list-inline-item"><a href="https://spotify.com/" target="_blank"><i
                             class="fab fa-spotify"></i></a></li>
             </ul>
-            <p class="pb-4 mb-0">Copyright &copy; 2021 Scoot's Podcast.</p>
-            <p class="text-muted pb-4 mb-0">Developed by Shane O'Hanlon</p>
+            <p class="footer-text pb-4 mb-0">Copyright &copy; 2021 Scoot's Podcast.</p>
+            <p class="footer-text pb-4 mb-0">Developed by Shane O'Hanlon</p>
         </div>
     </footer>
 
