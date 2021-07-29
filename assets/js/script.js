@@ -19,3 +19,9 @@ window.onscroll = function () {
     }
     prevScrollpos = currentScrollPos;
 }
+
+// Scroll Reveal 
+
+ScrollReveal().reveal('.reveal-about', { distance: '100px', duration: 2000, origin: 'right'});
+ScrollReveal().reveal('.reveal-listen', { distance: '100px', duration: 2000});
+ScrollReveal().reveal('.reveal-contact', { distance: '100px', duration: 2000, origin: 'left'});

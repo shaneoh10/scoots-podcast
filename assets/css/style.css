@@ -21,7 +21,7 @@ body {
     background: url(https://images.unsplash.com/photo-1573152958734-1922c188fba3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1490&q=80) no-repeat center fixed;
     background-size: cover;
 }
-#about,
+
 footer {
     background-color: #242424;
 }
@@ -35,6 +35,17 @@ h2 {
     font-size: 1.8rem;
 }
 
+/*********************************************** BUTTONS */
+
+.btn {
+    font-size: 1.8rem;
+    width: 12rem;
+}
+
+.btn-secondary {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: rgba(0, 0, 0, 0.6);
+}
 
 /*********************************************** HEADER */
 #navbar {
@@ -51,6 +62,12 @@ h2 {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.opaque-cover-listen {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 #title {
@@ -79,19 +96,28 @@ h2 {
 }
 
 .facebook-icon i{
-    color: #3B5998 !important;
+    color: #3B5998;
+    transition: 0.3s;
 }
 
 .instagram-icon i {
     color: #C13584;
+    transition: 0.3s;
 }
 
 .spotify-icon i {
     color: #1DB954;
+    transition: 0.3s;
+}
+
+/*********************************************** CONTACT */
+
+
+form {
+    font-size: 1.4rem;
 }
 
 /*********************************************** FOOTER */
-
 
 .footer--icons {
     font-size: 2rem;
@@ -108,6 +134,8 @@ h2 {
     transition: 0.3s;
 }
 
+.main--icons i:hover,
+.main--icons i:active,
 .footer--icons a:hover,
 .footer--icons a:active {
     color: #f8f8f8;

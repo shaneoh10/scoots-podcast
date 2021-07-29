@@ -16,6 +16,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Fontawesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous" />
+    <!-- Scroll Reveal CDN  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Local CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Scoot's Podcast</title>
@@ -67,16 +69,18 @@
         <div class="container">
             <h2 class="text-center pt-4 mb-3">About</h2>
             <hr class="w-25 mx-auto mb-5">
-            <div class="row">
+            <div class="row reveal-about">
                 <div class="col-12 col-md-4 mx-auto">
-                    <img src="https://support.hubstaff.com/wp-content/uploads/2019/08/good-pic.png" height="200"
-                        class="img-rounded">
+                    <img src="https://images.unsplash.com/photo-1622616762095-83934ffd635c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80" height="300"
+                        class="rounded-circle">
                 </div>
                 <div class="col-12 col-md-8 mb-5">
-                    <p class="main-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis minima modi aspernatur
+                    <p class="main-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis minima modi
+                        aspernatur
                         voluptatum ipsa beatae eligendi itaque, nostrum culpa maiores quidem excepturi quod qui est sunt
                         corrupti quos provident placeat?</p>
-                    <p class="main-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis minima modi aspernatur
+                    <p class="main-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis minima modi
+                        aspernatur
                         voluptatum ipsa beatae eligendi itaque, nostrum culpa maiores quidem excepturi quod qui est sunt
                         corrupti quos provident placeat?</p>
                 </div>
@@ -85,13 +89,14 @@
     </section>
 
     <section id="listen">
-        <div class="opaque-cover">
+        <div class="opaque-cover-listen">
             <div class="container">
                 <h2 class="text-center pt-4 pb-3">Listen</h2>
-                <hr class="w-25 mx-auto mb-5">
-                <p class="text-center p-4 mb-5 main-text">Follow my show on Spotify so you can keep up to date with the latest gossip from the village of
+                <hr class="w-25 mx-auto mb-4">
+                <p class="text-center p-4 mb-5 main-text reveal-listen">Follow my show on Spotify so you can keep up to date with the
+                    latest gossip from the village of
                     Whitegate, the real capital. New podcasts are uploaded every two weeks.</p>
-                <div class="row">
+                <div class="row reveal-listen">
                     <div class="col-12 mx-auto">
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
@@ -109,7 +114,8 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="container">
-                                        <iframe src="https://open.spotify.com/embed/episode/5YleTeULP1z6dYZbt58a96?theme=0"
+                                        <iframe
+                                            src="https://open.spotify.com/embed/episode/5YleTeULP1z6dYZbt58a96?theme=0"
                                             width="100%" height="300" frameBorder="0" allowtransparency="true"
                                             allow="encrypted-media">
                                         </iframe>
@@ -125,7 +131,8 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div class="container">
-                                        <iframe src="https://open.spotify.com/embed/episode/6K6xIX1lNaxXkX8mtawBYa?theme=0"
+                                        <iframe
+                                            src="https://open.spotify.com/embed/episode/6K6xIX1lNaxXkX8mtawBYa?theme=0"
                                             width="100%" height="300" frameBorder="0" allowtransparency="true"
                                             allow="encrypted-media">
                                         </iframe>
@@ -152,12 +159,12 @@
                     </div>
                     <div class="col-12 mx-auto text-center">
                         <ul class="main--icons list-inline pt-4">
-                            <li class="list-inline-item facebook-icon p-2"><a href="https://facebook.com/" target="_blank"><i
-                                        class="fab fa-facebook"></i></a></li>
-                            <li class="list-inline-item instagram-icon p-2"><a href="https://instagram.com/" target="_blank"><i
-                                        class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item spotify-icon p-2"><a href="https://spotify.com/" target="_blank"><i
-                                        class="fab fa-spotify"></i></a></li>
+                            <li class="list-inline-item facebook-icon p-2"><a href="https://facebook.com/"
+                                    target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item instagram-icon p-2"><a href="https://instagram.com/"
+                                    target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item spotify-icon p-2"><a href="https://spotify.com/"
+                                    target="_blank"><i class="fab fa-spotify"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -168,18 +175,16 @@
         <div class="container">
             <h2 class="text-center mt-4 mb-3">Contact</h2>
             <hr class="w-25 mx-auto mb-5">
-            <div class="row">
+            <div class="row reveal-contact">
                 <div class="col-12 col-md-6 mx-auto">
-                    <p class="text-center mb-5 main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
-                        dolores sequi quidem, ipsam
-                        odio aliquam ratione, et dignissimos cupiditate quod ipsa inventore consequatur? Officia libero
-                        id a enim reiciendis voluptates.</p>
+                    <p class="text-center mb-5 main-text">Feel free to drop me a message with any feedback or
+                        suggestions about the show. I'm always looking for new guests so don't be shy and let me know if
+                        you want to come and talk a bit of shite with me.</p>
                     <form>
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
                             <input type="text" class="form-control" id="name">
-                            <div id="emailHelp" class="form-text">Leave this blank if you wish to remain anonymous.
-                            </div>
+                            <div class="form-text">Leave this blank if you wish to remain anonymous.</div>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
